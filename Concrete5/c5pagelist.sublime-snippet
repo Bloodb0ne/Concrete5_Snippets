@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+	\$${1:pl} = new PageList();
+ 
+  //Filters
+  \$${1:pl}->filterByKeywords(\$keywords); // Filters files by keywords.
+  \$${1:pl}->filterByName(\$name, \$exact = false); // Filter page name.
+  \$${1:pl}->filterByPath(\$path, \$includeAllChildren = true); // Filters pages by path, children true/false
+  \$${1:pl}->filterByParentID(\$cParentID); //Filters by the parent ID.
+  \$${1:pl}->filterByCollectionTypeID(\$ctID); //Displays pages of a certain page type.
+  \$${1:pl}->filterByCollectionTypeHandle(\$ctHandle); //Filters by page type handles. \$ctHandle can be array of page type handles.
+  \$${1:pl}->filterByAttribute(\$attributeKeyHandle, \$value, \$comparison); //Filters by attribute.
+  
+  //Sorting
+  \$${1:pl}->sortByRelevance(); //Orders by index score descending. Only available when searching by keywords.
+  \$${1:pl}->sortByDisplayOrder(); //Orders by sitemap display order ascending.
+  \$${1:pl}->sortByDisplayOrderDescending(); // Orders by sitemap display order descending.
+  \$${1:pl}->sortByName(); //Orders by page name ascending.
+  \$${1:pl}->sortBy('ATTRIBUTE_HANDLE'); // Order by a page attribute
+ 
+  //Get the page List Results 
+  \$pages = \$${1:pl}->getPage();
+ 
+  \$pages = \$${1:pl}->get(\$itemsToGet = 100, \$offset = 0);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>c5pagelist</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

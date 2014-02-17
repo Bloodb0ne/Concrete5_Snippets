@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\$${1:block} = BlockType::getByHandle('${2:blockhandle}');
+\$${1:block}->render('${3:view}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>c5block</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

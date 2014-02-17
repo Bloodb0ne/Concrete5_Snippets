@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\$${1:block} = BlockType::getByHandle('page_list');
+\$${1:block}->controller->orderBy = 'display_asc';
+\$${1:block}->controller->paginate = 'true';
+\$${1:block}->controller->cParentID = '6149';
+\$${1:block}->controller->ctID = '' // Filter by CollectionType ID
+\$${1:block}->render('${2:view}');
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>c5pagelistblock</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+\$${1:block} = BlockType::getByHandle('autonav');
+\$${1:block}->controller->displayPages = 'top'; /* top,above,below,second_level,custom,current*/
+\$${1:block}->controller->displayPagesCID = '';
+\$${1:block}->controller->orderBy = 'display_asc'; /* chrono_asc/desc , display_asc/desc*/
+\$${1:block}->controller->displaySubpages = 'all'; /* none,all,relevant,relevant_breadcrumb*/
+\$${1:block}->controller->displaySubPageLevels = 'all'; /* enough,all,custom,enough_plus1*/
+\$${1:block}->controller->displaySubPageLevelsNum = '';
+
+\$${1:block}->render('${3:templatename}');
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>c5autonav</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

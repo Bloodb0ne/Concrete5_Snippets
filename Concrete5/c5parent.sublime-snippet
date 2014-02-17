@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+\$${1:page} = Page::getByID(\$${2:page}->getCollectionParentID());
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>c5parent</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
