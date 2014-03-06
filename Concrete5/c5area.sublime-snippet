@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-	\$${1:varname} = new Area('${2:areaname}');
-	\$${1:varname}->display($c);
+\$${1:varname} = new Area('${2:areaname}');
+\$${1:varname}->display(\$c);
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>c5area</tabTrigger>

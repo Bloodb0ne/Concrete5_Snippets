@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<?php echo $this->getThemePath(); ?>
+<?php echo \$this->getThemePath(); ?>/
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>c5theme</tabTrigger>

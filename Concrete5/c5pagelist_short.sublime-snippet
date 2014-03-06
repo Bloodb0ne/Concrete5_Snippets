@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+\$${1:pl} = new PageList();
+ 
+//Filters
+\$${1:pl}->filterByParentID(\$${2:cParentID}); //Filters by the parent ID.
+\$${1:pl}->filterByCollectionTypeHandle(\$${3:ctHandle}); //Filters by page type handles. \$ctHandle can be array of page type handles.
+  
+//Get the page List Results 
+\$${4:pages} = \$${1:pl}->getPage();
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>c5pagelist</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

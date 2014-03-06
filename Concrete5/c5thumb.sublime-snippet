@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 // \$ih - is the image helper variable (!)
-\${1:image} = \$${2:ih}->getThumbnail(${3:obj},${4:width},${5:height});
+\$${1:image} = \$${2:ih}->getThumbnail(\$${3:image},${4:width},${5:height});
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
